@@ -53,6 +53,6 @@ text-decoration:none;
 float:right;
 cursor: pointer;
 }
-files span{
+#files span{
   cursor: pointer;
 }
