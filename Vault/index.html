@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--local styles-->
+<link rel="stylesheet" href="assets/stylesheet.css">
+
+<!--CryptoJS Library-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js'></script>
+
+<!--JQuery Library-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<title>The Vault: By Finn Lancaster (flancast90)</title>
+</head>
+<body onload="blinker()">
+
+<h3 style="width:100%; overflow:break;">
+<pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;88&nbsp;8888&nbsp;88&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;8888888&nbsp;88&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;8&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;888&nbsp;&nbsp;&nbsp;&nbsp;88888&nbsp;&nbsp;8&nbsp;8888&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;88888&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;88&nbsp;&nbsp;88&nbsp;8888&nbsp;8&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;88&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;88&nbsp;888&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;88888&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;88&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;888&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;88&nbsp;&nbsp;88888&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;88&nbsp;88&nbsp;&nbsp;&nbsp;888&nbsp;88&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;88&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;888&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;88&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;88&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;888&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;88888&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;888&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;888&nbsp;8&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>By Finn Lancaster <a href="https://www.github.com/flancast90"><u>(flancast90)</u></a>
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+</pre>
+</h3>
+
+<form id="form">
+    <input type="text" id="password" placeholder="> Enter a password to protect this file."><button type="button" id="password-btn">Submit</button>
+</form>
+
+<div id="files">
+
+</div><br><br>
+<div class="opts">
+    <input onchange="login(this)" type="file" id="new" hidden>
+    <label class="new" for="new">New File</label>
+
+    <p class="save" onclick="saveIt()">Save Session</p>
+</div>
+
+<!--csript.js-->
+<script src="assets/script.js"></script>
+
+</body>
+</html>
