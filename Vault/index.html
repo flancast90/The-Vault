@@ -46,7 +46,8 @@
     <input onchange="login(this)" type="file" id="new" hidden>
     <label class="new" for="new">New File</label>
 
-    <p class="save" onclick="saveIt()">Save Session</p>
+    <p class="save" onclick="saveIt()">Save Session</p><br>
+    <p class="clear" style="cursor:pointer;" onclick="localStorage.removeItem('backup'); window.location.reload();">Clear All Saves</p>
 </div>
 
 <!--csript.js-->
