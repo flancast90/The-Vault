@@ -2,6 +2,9 @@
 
 Welcome to The Vault, a simple self-updating file hosting service! The entire project is based upon services such as Google Drive and Dropbox, but with a more 'hacky' feel and without a server. The project, by <a href="www.github.com/flancast90">flancast90</a>, and powered by CryptoJS AES encrytion, is made to be utilitarian and open source. Changes are welcomed via pull requests!
 
+## Screenshots
+![](https://i.imgur.com/VojzlAY.png)
+
 ## Get Started!
 Get started with The Vault by downloading. To start, open the index.html file. The rest can be done inside your browser! <br><b> Please Read the IMPORTANT section before continuing!</b>
 
